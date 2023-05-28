@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../font/Raleway-VariableFont_wght.ttf);
+}
+body{
+    background-color: #fff;
+    width: calc(100vw - 5px);
+    box-sizing: border-box;
+}
+
+#mouse-circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: -10px 0 0 -10px;
+    background-color: #6db187;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0px 0px 10px #2d4636;
+    opacity: 50%;
+    z-index: 100000;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: none;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: #6db187;
+    height: 20px;
+}
+nav{
+    position: fixed;
+    width: calc(100vw - 50px);
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 50px;
+    background-color: #ffffff95;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap: calc(5.2vw - 0.4px);
+}
+.logo h1{
+    font-size: calc(1vw + 21.2px);
+    text-align: left;
+    transition: 0.2s ease;
+}
+.logo h1:hover{
+    text-shadow: 2px 1px 1px #000;
+    color: #6db187;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.links p{
+    font-size: calc(0.3vw + 8.7px);
+    transition: 0.2s ease;
+}
+.links p:hover{
+    transition: 0.2s ease;
+    text-shadow: 2px 1px 1px #6db187;
+    cursor: pointer;
+}
+.buyNow{
+    background-color: #6db187;
+    width: calc(9.8vw + 111.7px);
+    height: calc(3.2vw + 37.2px);
+    background-image: url(../image/SNUG\ logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    overflow: hidden;
+    gap: 10px;
+}
+.buyNow h1{
+    transition: 0.5s ease;
+    font-size: calc(0.6vw + 12.4px);
+}
+.buyNow:hover{
+    background-color: #b7ffd3;
+    transition: 0.2s ease;
+    background-size: calc(2.6vw + 30px);
+    gap: 350px;
+    color: #0000006a;
+    cursor: pointer;
+    transition: 0.5s ease;
+    
+}
+.social{
+    text-transform: uppercase;
+    font-size: calc(0.4vw + 8.7px);
+    display: flex;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: auto;
+    margin-top: 0;
+    margin-left: calc(5.2vw - 0.4px);
+    margin-right: calc(5.2vw - 0.4px);
+}
+.social p:hover{
+    transition: 0.2s ease;
+    text-shadow: 2px 1px 1px #6db187;
+    cursor: pointer;
+}
+.newPage{
+    height: calc(100vh - 150px);
+    padding: calc(5.9vw - 13px) 0 50px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+.slider{
+    margin: 50px calc(17.6vw - 38.8px) 0 0;
+    width: 1050px;
+    height: 100%;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+.slide img{
+    height: 100%;
+}
+.s1{
+    animation: slide 30s ease infinite;
+}
+@keyframes slide {
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -25%;
+    }
+    45%{
+        margin-left: -25%;
+    }
+    50%{
+        margin-left: -50%;
+    }
+    70%{
+        margin-left: -50%;
+    }
+    75%{
+        margin-left: -75%;
+    }
+    90%{
+        margin-left: -75%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+
+.cth{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    right: 0;
+    top: 55%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: calc(0.3vw + 9px);
+    text-shadow: 2px 1px 1px #6db187;
+}
+.cth hr{
+    width: calc(29.4vw - 64.7px);
+    height: 1px;
+    background-color: #6db187;
+    border: 0;
+}
+.elem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    padding-right: 50px;
+}
+.elemImg img{
+    width: calc(22.7vw + 113.5px);
+}
+
+.text h1{
+    margin-bottom: 20px;
+    font-size: calc(4vw + 7.2px);
+    text-transform: uppercase;
+}
+.text h3{
+    font-size: calc(0.6vw + 8.3px);
+    text-transform: uppercase;
+}
+.textFlex{
+    display: flex;
+    gap: calc(6.8vw - 30.9px);
+    font-size: calc(0.6vw + 8.3px);
+}
+.more{
+    background-color: #6db187;
+    width: calc(3.7vw + 77.2px);
+    height: calc(1.5vw + 20.9px);
+    background-image: url(../image/SNUG\ logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    overflow: hidden;
+    gap: 0;
+    margin-top: 50px;
+}
+.more h1{
+    transition: 0.5s ease;
+    font-size: 15px;
+    margin: 0;
+}
+.more:hover{
+    background-color: #b7ffd3;
+    transition: 0.2s ease;
+    background-size: 40px;
+    gap: 200px;
+    color: #0000006a;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+footer{
+    background-color: #6db187;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+}
+.slogan{
+    margin-top: 20px;
+}
+.centerFooter img{
+    width: 100px;
+}
+#logoFooter{
+    width: 50px;
+}
+.socialMediaLinks{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.socialMediaLinks img{
+    width: 30px;
+}
+#top{
+    width: 80vw;
+    height: 1px;
+    background-color: #fcfcfc;
+    border: 0;
+    position: absolute;
+    top: 20px;
+    left: auto;
+    right: auto;
+}
+#bottom{
+    width: 80vw;
+    height: 1px;
+    background-color: #fcfcfc;
+    border: 0;
+    position: absolute;
+    bottom: 20px;
+    left: auto;
+    right: auto;
+}
+.johan img{
+    width: 50px;
+}
+.authors{
+    display: grid;
+    grid-template-areas: "a a"
+                         "b c";
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.authors p{
+    grid-area: a;
+}
+.left{
+    justify-content: left;
+}
+.right{
+    justify-content: right;
+    flex-wrap: wrap-reverse;
+}
+@media (max-width: 600px){
+    .links{
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 10px;
+    }
+    nav{
+        padding: 0 0 0 20px;
+        width: calc(100vw - 20px);
+        transition: 1s ease;
+    }
+    .newPage{
+        height: calc(100vh - 250px);
+        margin-bottom: 50px;
+    }
+    footer{
+        height: 500px;
+        padding-top: 100px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+@media (max-width: 660px){
+    #top{
+        width: 100%;
+    }
+    .elem{
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+    .textFlex{
+        gap: 20px;
+    }
+    .more{
+        margin: 20px auto;
+    }
+    .elem img{
+        width: 80%;
+    }
+}
